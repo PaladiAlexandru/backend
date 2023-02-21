@@ -12,6 +12,6 @@ public class MainController {
     @GetMapping("/hello")
     public ResponseEntity<String> great(@RequestParam(name="name",required = false) String name){
         String owner = name == null? "world":name;
-        return ResponseEntity.ok( "Hello " + owner + " from the construction zone!");
+        return ResponseEntity.ok( "Hello " + owner + " from the construction zonee!");
     }
 }
